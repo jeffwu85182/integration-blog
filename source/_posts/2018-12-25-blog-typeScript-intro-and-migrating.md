@@ -6,7 +6,7 @@ categories: blog
 author: Jeff Wu
 ---
 
-![](/integration-blog/assets/2018-12-25-typescript-intro-and-migrating/babel-ts.jpg)
+{% asset_img babel-ts.jpg %}
 
 ### Backgound
 

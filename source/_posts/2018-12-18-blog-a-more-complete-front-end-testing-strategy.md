@@ -8,7 +8,8 @@ author: Michael Lin
 ---
 
 
-![test-strategy](/integration-blog/assets/2018-12-18-blog-a-more-complete-front-end-testing-strategy/test-strategy.jpg)
+{% asset_img test-strategy.jpg test-strategy %}
+
 
 > The assumption in this article is that we are continuously developing a relatively large front-end project, and we have adopted a domain-driven design, as well as an object-oriented programming model. The front-end business logic is split into **`domain modules`**/**`UI components`**. So we may need to have a more complete testing strategy to assure such a front-end project.
 
@@ -16,7 +17,7 @@ author: Michael Lin
 
 Whether it's a traditional test model or a continuous delivery model, we typically define the following three types of tests:
 
-![generic-test](/integration-blog/assets/2018-12-18-blog-a-more-complete-front-end-testing-strategy/generic-test.png)
+{% asset_img generic-test.png generic-test %}
 
 - E2E
 
@@ -64,7 +65,7 @@ Among the issues we mentioned for some test strategies, based on our ATDD sustai
 
 ## Propose a more complete testing strategy
 
-![new-test-strategy](/integration-blog/assets/2018-12-18-blog-a-more-complete-front-end-testing-strategy/new-test-strategy.png)
+{% asset_img new-test-strategy.png new-test-strategy %}
 
 - E2E
 
@@ -87,7 +88,7 @@ IT1 is just the minimum set of modules integration tests, it only requires the m
 In IT2 talking about testing problems with the underlying modules (less dependent modules or non-dependent modules), we recommend that such modules be suitable for more complete UT, especially core functions, and that the core modules of other modules, or helper functions, can be considered for unit testing, and that in many cases, Can help AC cover more examples. It is an important addition to IT1/IT2/IT3.
 
 
-![it-cover](/integration-blog/assets/2018-12-18-blog-a-more-complete-front-end-testing-strategy/it-cover.png)
+{% asset_img it-cover.png it-cover %}
 
 Among the different test types, the test factors covered are also different. Then we hope that with such a test strategy can be more complete and efficient to meet the various factors of testing: The E2E test covers almost all of the test factors, IT3 is less than E2E real server APIs and real browsers, IT2 is less than T3 a number of non-essential modules and UI components, IT1 has fewer UI components than IT2, and UT only covers a small number of core logical parts.
 
